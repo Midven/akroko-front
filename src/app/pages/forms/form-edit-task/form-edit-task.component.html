@@ -3,7 +3,7 @@
         <form [formGroup]="editTask" >
             <div class="edit--task">
                 <section>
-                    <h2>Task information</h2>
+                    <h4>Task information</h4>
                     <mat-form-field>
                         <input matInput placeholder="Task's name" name="name" type="text" formControlName="name"
                             required>
@@ -94,7 +94,7 @@
                     </ul>
 
                     <div class="task--checklist-add">
-                        <input name="addingtochecklist" type="text" maxlength="20" [(ngModel)]="addCheckList"
+                        <input name="addingtochecklist" type="text" maxlength="40" [(ngModel)]="addCheckList"
                         placeholder="Add an item"
                         [ngModelOptions]="{standalone: true}" (keyup.enter)="addToCheckList()">
                         <button class="middlebutton" (click)="addToCheckList()">Add to checklist</button>
